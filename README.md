@@ -1,4 +1,4 @@
-h1. Android externs for Haxe
+<h1>Android externs for Haxe</h1>
 
 First release, working with Android API 10 (2.3.3)
 
