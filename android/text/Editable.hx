@@ -1,7 +1,7 @@
 package android.text;
 
 import java.StdTypes;
-extern interface Editable  implements java.lang.CharSequence, android.text.GetChars, android.text.Spannable, java.lang.Appendable
+extern interface Editable implements java.lang.CharSequence, implements android.text.GetChars, implements android.text.Spannable, implements java.lang.Appendable
 {
 
 	public function clear():Void;
