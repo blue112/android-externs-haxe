@@ -8,7 +8,7 @@ extern class ClickableSpan extends android.text.style.CharacterStyle, implements
 
 	public function new():Void;
 
-	public override function updateDrawState(arg0:android.text.TextPaint):Void;
+	override public function updateDrawState(arg0:android.text.TextPaint):Void;
 
 
 }

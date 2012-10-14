@@ -13,7 +13,5 @@ extern class TextPaint  extends android.graphics.Paint
 	@:overload(function(arg0:Int):Void{})
 	public function new(arg0:android.graphics.Paint):Void;
 
-	public override function set(arg0:Dynamic):Void;
-
 
 }

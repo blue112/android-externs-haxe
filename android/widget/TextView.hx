@@ -6,17 +6,12 @@ extern class TextView  extends android.view.View, implements android.view.ViewTr
 
 	public function setMaxHeight(arg0:Int):Void;
 
-	public override function onWindowFocusChanged(arg0:Bool):Void;
 
 	public function getGravity():Int;
-
-	public override function onStartTemporaryDetach():Void;
 
 	public function beginBatchEdit():Void;
 
 	public function getTextSize():Float;
-
-	public override function performLongClick():Bool;
 
 	@:overload(function(arg0:Int,arg1:Int,arg2:Int,arg3:Int):Void{})
 	public function setCompoundDrawablesWithIntrinsicBounds(arg0:android.graphics.drawable.Drawable,arg1:android.graphics.drawable.Drawable,arg2:android.graphics.drawable.Drawable,arg3:android.graphics.drawable.Drawable):Void;
@@ -27,7 +22,6 @@ extern class TextView  extends android.view.View, implements android.view.ViewTr
 
 	public function removeTextChangedListener(arg0:android.text.TextWatcher):Void;
 
-	public override function computeScroll():Void;
 
 	public function getTotalPaddingRight():Int;
 
@@ -41,7 +35,6 @@ extern class TextView  extends android.view.View, implements android.view.ViewTr
 
 	static public function getTextColor(arg0:android.content.Context,arg1:android.content.res.TypedArray,arg2:Int):Int;
 
-	public override function onKeyDown(arg0:Int,arg1:android.view.KeyEvent):Bool;
 
 	@:overload(function(arg0:java.lang.CharSequence):Void{})
 	public function setError(arg0:java.lang.CharSequence,arg1:android.graphics.drawable.Drawable):Void;
@@ -50,9 +43,8 @@ extern class TextView  extends android.view.View, implements android.view.ViewTr
 
 	public function getUrls():java.NativeArray<android.text.style.URLSpan>;
 
-	public function getExtendedPaddingTop():Int;
+	public function getExtendedPaddingTop():Int
 
-	public override function getFocusedRect(arg0:android.graphics.Rect):Void;
 
 	public function getCompoundPaddingTop():Int;
 
@@ -105,11 +97,9 @@ extern class TextView  extends android.view.View, implements android.view.ViewTr
 
 	public function getSelectionStart():Int;
 
-	public override function onKeyMultiple(arg0:Int,arg1:Int,arg2:android.view.KeyEvent):Bool;
 
 	public function setFilters(arg0:java.NativeArray<android.text.InputFilter>):Void;
 
-	public override function onCreateInputConnection(arg0:android.view.inputmethod.EditorInfo):android.view.inputmethod.InputConnection;
 
 	public function setMovementMethod(arg0:android.text.method.MovementMethod):Void;
 
@@ -192,26 +182,21 @@ extern class TextView  extends android.view.View, implements android.view.ViewTr
 
 	public function setGravity(arg0:Int):Void;
 
-	public override function dispatchPopulateAccessibilityEvent(arg0:android.view.accessibility.AccessibilityEvent):Bool;
 
-	public override function onKeyUp(arg0:Int,arg1:android.view.KeyEvent):Bool;
 
 	@:overload(function(arg0:Int):Void{})
 	public function setHintTextColor(arg0:android.content.res.ColorStateList):Void;
 
 	public function setMinEms(arg0:Int):Void;
 
-	public override function onCheckIsTextEditor():Bool;
 
 	public function setShadowLayer(arg0:Float,arg1:Float,arg2:Float,arg3:Int):Void;
 
-	public override function onKeyShortcut(arg0:Int,arg1:android.view.KeyEvent):Bool;
 
 	public function setHeight(arg0:Int):Void;
 
 	public function getHint():java.lang.CharSequence;
 
-	public override function cancelLongPress():Void;
 
 	public function getImeOptions():Int;
 
@@ -270,7 +255,6 @@ extern class TextView  extends android.view.View, implements android.view.ViewTr
 
 	public function onPrivateIMECommand(arg0:String,arg1:android.os.Bundle):Bool;
 
-	public override function onTrackballEvent(arg0:android.view.MotionEvent):Bool;
 
 	public function getCurrentTextColor():Int;
 
@@ -291,16 +275,13 @@ extern class TextView  extends android.view.View, implements android.view.ViewTr
 
 	public function setInputExtras(arg0:Int):Void;
 
-	public override function onTouchEvent(arg0:android.view.MotionEvent):Bool;
 
 	public function setSelectAllOnFocus(arg0:Bool):Void;
 
 	@:overload(function(arg0:Float):Void{})
 	public function setTextSize(arg0:Int,arg1:Float):Void;
 
-	public override function setPadding(arg0:Int,arg1:Int,arg2:Int,arg3:Int):Void;
 
-	public override function getBaseline():Int;
 
 	public function getAutoLinkMask():Int;
 
@@ -308,7 +289,6 @@ extern class TextView  extends android.view.View, implements android.view.ViewTr
 
 	public function didTouchFocusSelect():Bool;
 
-	public override function invalidateDrawable(arg0:android.graphics.drawable.Drawable):Void;
 
 	public function onPreDraw():Bool;
 
@@ -316,9 +296,7 @@ extern class TextView  extends android.view.View, implements android.view.ViewTr
 
 	public function getPaintFlags():Int;
 
-	public override function setSelected(arg0:Bool):Void;
 
-	public override function onFinishTemporaryDetach():Void;
 
 
 }

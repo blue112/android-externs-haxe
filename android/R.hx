@@ -1,10 +1,7 @@
 package android;
 
 import java.StdTypes;
-extern class R 
+extern class R
 {
-
 	public function new():Void;
-
-
 }
