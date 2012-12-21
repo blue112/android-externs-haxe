@@ -1,7 +1,9 @@
 package android;
 
 import java.StdTypes;
-extern class R_layout 
+
+@:native("android.R.layout")
+extern class R_layout
 {
 	static public var activity_list_item:Int;
 	static public var browser_link_context_header:Int;

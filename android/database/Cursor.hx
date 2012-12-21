@@ -1,14 +1,14 @@
 package android.database;
 
 import java.StdTypes;
-extern interface Cursor 
+extern interface Cursor
 {
 
 	public function isNull(arg0:Int):Bool;
 
 	public function moveToLast():Bool;
 
-	public function getDouble(arg0:Int):Double;
+	public function getDouble(arg0:Int):Float;
 
 	public function registerContentObserver(arg0:android.database.ContentObserver):Void;
 

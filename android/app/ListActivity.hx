@@ -3,7 +3,6 @@ package android.app;
 import java.StdTypes;
 extern class ListActivity  extends android.app.Activity
 {
-
 	public function new():Void;
 
 	public function getSelectedItemPosition():Int;
@@ -17,8 +16,4 @@ extern class ListActivity  extends android.app.Activity
 	public function setSelection(arg0:Int):Void;
 
 	public function setListAdapter(arg0:android.widget.ListAdapter):Void;
-
-	public function onContentChanged():Void;
-
-
 }

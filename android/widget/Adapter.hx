@@ -1,11 +1,8 @@
 package android.widget;
 
 import java.StdTypes;
-extern interface Adapter 
+extern interface Adapter
 {
-	static public var IGNORE_ITEM_VIEW_TYPE:Int;
-	static public var NO_SELECTION:Int;
-
 	public function isEmpty():Bool;
 
 	public function getViewTypeCount():Int;

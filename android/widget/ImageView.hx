@@ -32,10 +32,6 @@ extern class ImageView  extends android.view.View
 
 	public function setImageDrawable(arg0:android.graphics.drawable.Drawable):Void;
 
-	public function getBaseline():Int;
-
-	public function invalidateDrawable(arg0:android.graphics.drawable.Drawable):Void;
-
 	public function clearColorFilter():Void;
 
 	@:overload(function(arg0:Int):Void{})
@@ -49,8 +45,4 @@ extern class ImageView  extends android.view.View
 	public function setMaxWidth(arg0:Int):Void;
 
 	public function setImageLevel(arg0:Int):Void;
-
-	public function setSelected(arg0:Bool):Void;
-
-
 }

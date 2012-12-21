@@ -1,7 +1,8 @@
 package android.hardware;
 
 import java.StdTypes;
-extern class Camera_Parameters 
+import java.lang.Number;
+extern class Camera_Parameters
 {
 	static public var WHITE_BALANCE_AUTO:String;
 	static public var WHITE_BALANCE_INCANDESCENT:String;
@@ -56,7 +57,6 @@ extern class Camera_Parameters
 	static public var FOCUS_DISTANCE_FAR_INDEX:Int;
 	static public var PREVIEW_FPS_MIN_INDEX:Int;
 	static public var PREVIEW_FPS_MAX_INDEX:Int;
-	 var this$0:android.hardware.Camera;
 
 	public function getSupportedFlashModes():java.util.List<String>;
 

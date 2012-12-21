@@ -14,11 +14,9 @@ extern class FileInputStream  extends java.io.InputStream, implements java.io.Cl
 
 	@:overload(function():Int{})
 	@:overload(function(arg0:java.NativeArray<Int8>):Int{})
-	override public function read(arg0:haxe.io.BytesData):Int;
+	override public function read():Int;
 
 	override public function available():Int;
-
-	public function skip(arg0:haxe.Int64):haxe.Int64;
 
 	override public function close():Void;
 

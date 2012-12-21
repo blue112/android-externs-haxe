@@ -1,11 +1,10 @@
 package android.hardware;
 
 import java.StdTypes;
-extern class Camera_Size 
+extern class Camera_Size
 {
 	public var width:Int;
 	public var height:Int;
-	 var this$0:android.hardware.Camera;
 
 	public function new(arg0:android.hardware.Camera,arg1:Int,arg2:Int):Void;
 

@@ -1,7 +1,7 @@
 package android.widget;
 
 import java.StdTypes;
-extern class BaseAdapter  implements android.widget.ListAdapter, android.widget.SpinnerAdapter
+extern class BaseAdapter  implements android.widget.ListAdapter, implements android.widget.SpinnerAdapter
 {
 
 	public function notifyDataSetInvalidated():Void;
@@ -28,5 +28,11 @@ extern class BaseAdapter  implements android.widget.ListAdapter, android.widget.
 
 	public function isEnabled(arg0:Int):Bool;
 
+	public function getItem(arg0:Int):Dynamic;
 
+	public function getView(arg0:Int,arg1:android.view.View,arg2:android.view.ViewGroup):android.view.View;
+
+	public function getItemId(arg0:Int):haxe.Int64;
+
+	public function getCount():Int;
 }

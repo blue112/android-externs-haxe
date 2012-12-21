@@ -8,28 +8,19 @@ extern class AdapterView<T:android.widget.Adapter>  extends android.view.ViewGro
 	static public var INVALID_POSITION:Int;
 	static public var INVALID_ROW_ID:haxe.Int64;
 
-	public function setFocusableInTouchMode(arg0:Bool):Void;
-
-	public function setOnClickListener(arg0:android.view.View_OnClickListener):Void;
-
 	public function setSelection(arg0:Int):Void;
 
 	public function getLastVisiblePosition():Int;
 
-	public function removeViewAt(arg0:Int):Void;
-
 	@:overload(function(arg0:android.view.View):Void{})
 	@:overload(function(arg0:android.view.View,arg1:Int):Void{})
 	@:overload(function(arg0:android.view.View,arg1:android.view.ViewGroup_LayoutParams):Void{})
-	public function addView(arg0:android.view.View,arg1:Int,arg2:android.view.ViewGroup_LayoutParams):Void;
+	@:overfloat(function(arg0:android.view.View, arg1:Int, arg2:android.view.ViewGroup_LayoutParams):Void{})
+	override public function addView(arg0:android.view.View,arg1:android.view.ViewGroup_LayoutParams):Void;
 
 	public function getOnItemSelectedListener():android.widget.AdapterView_OnItemSelectedListener;
 
 	public function getAdapter():T;
-
-	public function removeView(arg0:android.view.View):Void;
-
-	public function removeAllViews():Void;
 
 	public function getOnItemClickListener():android.widget.AdapterView_OnItemClickListener;
 
@@ -39,11 +30,7 @@ extern class AdapterView<T:android.widget.Adapter>  extends android.view.ViewGro
 
 	public function getFirstVisiblePosition():Int;
 
-	public function dispatchPopulateAccessibilityEvent(arg0:android.view.accessibility.AccessibilityEvent):Bool;
-
 	public function setOnItemClickListener(arg0:android.widget.AdapterView_OnItemClickListener):Void;
-
-	public function setFocusable(arg0:Bool):Void;
 
 	public function setOnItemLongClickListener(arg0:android.widget.AdapterView_OnItemLongClickListener):Void;
 

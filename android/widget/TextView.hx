@@ -43,8 +43,7 @@ extern class TextView  extends android.view.View, implements android.view.ViewTr
 
 	public function getUrls():java.NativeArray<android.text.style.URLSpan>;
 
-	public function getExtendedPaddingTop():Int
-
+	public function getExtendedPaddingTop():Int;
 
 	public function getCompoundPaddingTop():Int;
 

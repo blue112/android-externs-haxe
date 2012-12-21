@@ -1,7 +1,9 @@
 package android.view;
 
 import java.StdTypes;
-extern class ViewGroup_LayoutParams 
+
+@:native("android.view.ViewGroup.LayoutParams")
+extern class ViewGroup_LayoutParams
 {
 	static public var FILL_PARENT:Int;
 	static public var MATCH_PARENT:Int;

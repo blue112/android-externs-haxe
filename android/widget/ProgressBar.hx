@@ -11,8 +11,6 @@ extern class ProgressBar  extends android.view.View
 
 	public function setIndeterminateDrawable(arg0:android.graphics.drawable.Drawable):Void;
 
-	public function postInvalidate():Void;
-
 	public function getMax():Int;
 
 	public function getProgress():Int;
@@ -33,13 +31,9 @@ extern class ProgressBar  extends android.view.View
 
 	public function isIndeterminate():Bool;
 
-	public function invalidateDrawable(arg0:android.graphics.drawable.Drawable):Void;
-
 	public function setSecondaryProgress(arg0:Int):Void;
 
 	public function onRestoreInstanceState(arg0:android.os.Parcelable):Void;
-
-	public function setVisibility(arg0:Int):Void;
 
 	public function setProgress(arg0:Int):Void;
 

@@ -1,24 +1,16 @@
 package android.widget;
 
 import java.StdTypes;
-extern class CursorAdapter  extends android.widget.BaseAdapter implements android.widget.Filterable
+extern class CursorAdapter  extends android.widget.BaseAdapter, implements android.widget.Filterable
 {
 
 	public function runQueryOnBackgroundThread(arg0:java.lang.CharSequence):android.database.Cursor;
 
 	public function newView(arg0:android.content.Context,arg1:android.database.Cursor,arg2:android.view.ViewGroup):android.view.View;
 
-	public function hasStableIds():Bool;
-
 	public function bindView(arg0:android.view.View,arg1:android.content.Context,arg2:android.database.Cursor):Void;
 
 	public function newDropDownView(arg0:android.content.Context,arg1:android.database.Cursor,arg2:android.view.ViewGroup):android.view.View;
-
-	public function getView(arg0:Int,arg1:android.view.View,arg2:android.view.ViewGroup):android.view.View;
-
-	public function getDropDownView(arg0:Int,arg1:android.view.View,arg2:android.view.ViewGroup):android.view.View;
-
-	public function getItemId(arg0:Int):haxe.Int64;
 
 	public function setFilterQueryProvider(arg0:android.widget.FilterQueryProvider):Void;
 
@@ -27,8 +19,6 @@ extern class CursorAdapter  extends android.widget.BaseAdapter implements androi
 
 	public function getCursor():android.database.Cursor;
 
-	public function getItem(arg0:Int):Dynamic;
-
 	public function convertToString(arg0:android.database.Cursor):java.lang.CharSequence;
 
 	public function changeCursor(arg0:android.database.Cursor):Void;
@@ -36,8 +26,4 @@ extern class CursorAdapter  extends android.widget.BaseAdapter implements androi
 	public function getFilter():android.widget.Filter;
 
 	public function getFilterQueryProvider():android.widget.FilterQueryProvider;
-
-	public function getCount():Int;
-
-
 }

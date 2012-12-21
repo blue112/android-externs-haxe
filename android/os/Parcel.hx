@@ -23,13 +23,13 @@ extern class Parcel
 
 	public function readTypedList<T:Dynamic>(arg0:java.util.List<T>,arg1:android.os.Parcelable_Creator<T>):Void;
 
-	public function writeDoubleArray(arg0:java.NativeArray<Double>):Void;
+	public function writeDoubleArray(arg0:java.NativeArray<Float>):Void;
 
 	public function setDataCapacity(arg0:Int):Void;
 
 	public function readBinderArray(arg0:java.NativeArray<android.os.IBinder>):Void;
 
-	public function writeDouble(arg0:Double):Void;
+	public function writeDouble(arg0:Float):Void;
 
 	public function writeLong(arg0:haxe.Int64):Void;
 
@@ -130,7 +130,7 @@ extern class Parcel
 
 	public function writeSerializable(arg0:java.io.Serializable):Void;
 
-	public function readDoubleArray(arg0:java.NativeArray<Double>):Void;
+	public function readDoubleArray(arg0:java.NativeArray<Float>):Void;
 
 	public function createLongArray():java.NativeArray<haxe.Int64>;
 
@@ -140,7 +140,7 @@ extern class Parcel
 
 	public function readLongArray(arg0:java.NativeArray<haxe.Int64>):Void;
 
-	public function createDoubleArray():java.NativeArray<Double>;
+	public function createDoubleArray():java.NativeArray<Float>;
 
 	public function setDataSize(arg0:Int):Void;
 
@@ -176,7 +176,7 @@ extern class Parcel
 
 	public function readHashMap(arg0:java.lang.ClassLoader):java.util.HashMap<Dynamic, Dynamic>;
 
-	public function readDouble():Double;
+	public function readDouble():Float;
 
 	public function readArrayList(arg0:java.lang.ClassLoader):java.util.ArrayList<Dynamic>;
 

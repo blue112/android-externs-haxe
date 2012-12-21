@@ -1,7 +1,9 @@
 package android;
 
 import java.StdTypes;
-extern class R_id 
+
+@:native("android.R.id")
+extern class R_id
 {
 	static public var addToDictionary:Int;
 	static public var background:Int;
